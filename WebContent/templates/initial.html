@@ -1,0 +1,114 @@
+<ion-view view-title="Login" ng-init="showVideo()">
+    <ion-content class="backgroundInitial" scroll="false">
+        <ion-slide-box on-slide-changed="slideChanged(index)">
+            <ion-slide>
+                <div class="indexWrapper">
+                    <div class="ionSlideMaxWidth">
+                        <img src="img/recreovias_white.svg" class="image">
+                    </div>
+                </div>
+                <div class="ionSlideMaxWidth">
+                    <button class="button" ng-click="goToRegistrar()">
+                        REGISTRARSE
+                    </button>
+                    <button class="button" ng-click="goToEntrar()">
+                        ENTRAR
+                    </button>
+                    <br>
+                    <img src="img/alcaldia.png" id="alcaldia">
+                    <div class="IDRDsubtitle">CULTURA, RECREACIÓN Y DEPORTE<br>Instituto Distrital de Recreación y Deporte</div>
+                    <div class="IDRD"><b>IDRD</b></div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+            <div class="listWrapper indexWrapper">
+                <div class="ionSlideMaxWidth">
+                    <div class="list">
+                        <form name="forms.signupform">
+                            <label class="item item-input" ng-class="{ 'has-error' : forms.signupform.name.$invalid }">
+                                <div class="input-label">
+                                    Nombre
+                                </div>
+                                <input type="text" ng-model="signup.name" name="name" required>
+                            </label>
+                            <label class="item item-input" ng-class="{ 'has-error' : forms.signupform.email.$invalid }">
+                                <div class="input-label">
+                                    Email
+                                </div>
+                                <input type="email" ng-model="signup.email" name="email" required>
+                            </label>
+                            <!--<label class="item item-input item-select" ng-class="{ 'has-error' : forms.signupform.sex.$invalid }">
+                                <div class="input-label">
+                                    Sexo
+                                </div>
+                                <select ng-model="signup.sex" name="sex" required>
+                                    <option value='M'>Masculino</option>
+                                    <option value='F'>Femenino</option>
+                                </select>
+                            </label>-->
+                            <label class="item item-input" ng-class="{ 'has-error' : forms.signupform.password1.$invalid }">
+                                <div class="input-label">
+                                    Contraseña
+                                </div>
+                                <input type="password" ng-model="signup.password1" name="password1" equals="{{signup.password2}}" required>
+                            </label>
+                            <label class="item item-input" ng-class="{ 'has-error' : forms.signupform.password2.$invalid }">
+                                <div class="input-label">
+                                    Repetir Contraseña
+                                </div>
+                                <input type="password" ng-model="signup.password2" name="password2" equals="{{signup.password1}}" required>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="ionSlideMaxWidth">
+                <button class="button" ng-click="registrarse()">
+                    Continuar
+                </button>
+                <button class="button icon-left ion-social-facebook" id="facebook" ng-click="loginWithFacebook()">
+                    Facebook
+                </button>
+                <button class="button icon-left ion-social-googleplus" id="google" ng-click="loginWithGoogle()">
+                    Google
+                </button>
+                <div class="question" ng-click="goToEntrar()">¿Ya tienes cuenta?</div>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="indexWrapper listWrapper">
+                <div class="ionSlideMaxWidth">
+                    <div class="list">
+                        <form name="forms.loginform">
+                            <label class="item item-input" ng-class="{ 'has-error' : forms.loginform.email.$invalid }">
+                                <div class="input-label">
+                                    Email
+                                </div>
+                                <input type="email" ng-model="login.email" name="email" required>
+                            </label>
+                            <label class="item item-input" ng-class="{ 'has-error' : forms.loginform.password.$invalid }">
+                                <div class="input-label">
+                                    Contraseña
+                                </div>
+                                <input type="password" ng-model="login.password" name="password" required>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="ionSlideMaxWidth">
+                <button class="button" ng-click="entrar()">
+                    Continuar
+                </button>
+                <button class="button icon-left ion-social-facebook" id="facebook" ng-click="loginWithFacebook()">
+                    Facebook
+                </button>
+                <button class="button icon-left ion-social-googleplus" id="google" ng-click="loginWithGoogle()">
+                    Google
+                </button>
+                <div class="question" ng-click="goToRegistrar()">¿No tienes cuenta?</div>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+</ion-view>

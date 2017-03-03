@@ -1,0 +1,1171 @@
+/* Empty. Add your own CSS if you like */
+
+.hideOpacity {
+    opacity: 0;
+}
+
+.menu-profile {
+    text-align: center;
+    /*height: 130px !important;*/
+}
+
+.menu-profile h2 {
+    font-size: 16px;
+    width: 100% !important;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.menu-profile .img {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-left: calc(50% - 40px); 
+}
+
+.menu-profile .top {
+    height: 8px;
+}
+.item-complex .item-content {
+  padding: 12px 49px 12px 16px;
+}
+.scroll-menu {
+  max-height: calc(100% - 233px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+ion-side-menu .list {
+  height: 100%;
+}
+body,
+html {
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+}
+
+.backgroundInitial {
+  background: url("../img/background.svg") center center;
+  background-size: cover;
+}
+
+.backgroundInitial .button {
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    /*border-radius: 24px;*/
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.backgroundInitial .activated {
+    background-color: rgba(255,255,255,0.5);
+    color: #fa5b02;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.backgroundInitial #facebook {
+    color: white;
+    background-color: #3B5998;
+    border: 1px solid #3B5998;
+}
+
+.backgroundInitial #facebook.activated {
+    background-color: rgba(59,89,152,0.8);
+    border: 1px solid rgba(59,89,152,0.8);
+}
+
+.backgroundInitial #google {
+    color: white;
+    background-color: #DD4B39;
+    border: 1px solid #DD4B39;
+}
+
+.backgroundInitial #google.activated {
+    background-color: rgba(221,75,57,0.8);
+    border: 1px solid rgba(221,75,57,0.8);
+}
+
+.backgroundInitial .notSelected {
+  opacity: .5;
+}
+
+.backgroundInitial .image {
+  width: calc(100% - 80px);
+  max-width: 400px;
+  margin-bottom: 22%;
+}
+
+.IDRD {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.IDRDsubtitle {
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    line-height: 10px;
+
+}
+
+.backgroundInitial .indexWrapper .socialButtonsContainer {
+    width: 100%;
+}
+
+.backgroundInitial .indexWrapper .list {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+} 
+
+.backgroundInitial .ionSlideMaxWidth {
+  width: 100%;
+}
+
+.backgroundInitial .indexWrapper .list input {
+    color: white;
+    padding-right: 0px;
+    text-align: end;
+}
+
+.backgroundInitial .indexWrapper .list .item-input {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.backgroundInitial .indexWrapper .list input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgba(255,255,255,0.5);
+}
+.backgroundInitial .indexWrapper .list input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: rgba(255,255,255,0.5);
+   opacity:  1;
+}
+.backgroundInitial .indexWrapper .list input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: rgba(255,255,255,0.5);
+   opacity:  1;
+}
+.backgroundInitial .indexWrapper .list input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgba(255,255,255,0.5);
+}
+
+.backgroundInitial .indexWrapper .item {
+    background-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: white;
+    border-left-color: transparent;
+}
+
+.backgroundInitial .indexWrapper label.has-error {
+  border-bottom-color: rgba(255,255,255,0.5);
+}
+.backgroundInitial .indexWrapper label.has-error .input-label {
+  color: rgba(255,255,255,0.5);
+}
+
+.backgroundInitial .indexWrapper .item input.ng-invalid {
+  color: rgba(255,255,255,0.5);
+}
+
+.backgroundInitial .indexWrapper .list .input-label {
+    width: auto;
+    font-size: 14px;
+    color: rgba(255,255,255,1);
+    padding: 4px 0px;
+}
+
+.backgroundInitial .indexWrapper .list .item-select select {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+}
+
+.backgroundInitial .indexWrapper .list .item-select:after {
+    color: transparent;
+}
+
+#alcaldia {
+  width: 124px;
+  margin-top: 10px;
+}
+
+.backgroundInitial .slider-pager {
+  display: none;
+}
+
+.backgroundInitial .indexWrapper {
+  width: 100%;
+  height: calc(100% - 256px);
+  display: -ms-flexbox;
+  display: -webkit-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.backgroundInitial .question {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.backgroundInitial .question.activated {
+    background-color: transparent;
+    color: white;
+    border: 0px solid transparent;
+    text-decoration: underline;
+}
+
+.backgroundInitial .listWrapper {
+    min-height: 255px;
+    height: calc(100% - 226px) !important;
+}
+
+.backgroundInitial .slider-pager .slider-pager-page {
+    color: white;
+}
+
+.backgroundInitial .slider {
+  height: 100%;
+}
+
+.backgroundInitial .slider-slide {
+    text-align: center;
+}
+
+.indexWrapperAbsolute {
+    position: absolute;
+    top: 0;
+}
+
+.inputWrapper {
+  width: calc(100% - 20px);
+  display: inline-block;
+}
+
+.button-container {
+  text-align: center;
+}
+
+ion-side-menu {
+    background: url("../img/background.svg") center center;
+    background-size: cover;
+}
+
+ion-side-menu .item {
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+
+ion-side-menu .item .item-content.activated {
+    background-color: rgba(255,255,255,0.5);
+}
+
+ion-side-menu .item-complex .item-content {
+    background-color: transparent;
+}
+
+.menu_footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.bar.bar-assertive {
+    border-color: white;
+    background-color: white;
+    background-image: linear-gradient(0deg, white, white 50%, transparent 50%);
+    color: #f15207 !important;
+    border-bottom: 1px solid #ddd;
+}
+
+.bar-assertive .button.button-clear {
+    color: #f15207 !important;
+}
+
+.bar.bar-assertive .title {
+    color: #f15207 !important;
+}
+
+.menu-content {
+    /*box-shadow: -6px 0px 12px rgba(0, 0, 0, 0.3);*/
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.actividad .markerContainer {
+    position: relative;
+    left: calc(50% - 60px);
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.actividad .markerContainer img {
+    position: absolute;
+    top: 0;
+    width: 120px;
+}
+
+.actividad #sun {
+    width: 80px;
+    top: 21px;
+    left: 21px;
+}
+
+.actividad #sun.rotate {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.actividad .button {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    background-color: transparent;
+    border: 1px solid #444;
+}
+
+.actividad .button.activated {
+    background-color: rgba(68,68,68,0.2);
+    border: 1px solid rgba(68,68,68,0.2) !important;
+}
+
+.actividad #detectandoMsg {
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+}
+
+.actividad .slider-pager {
+  display: none;
+}
+
+.actividad .listWrapper .list {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.actividad #mapActividad {
+  height: calc(100% - 98px);
+  margin-top: -2px;
+}
+
+.actividad #mapHistorialNueva {
+  height: calc(100% - 246px);
+  margin-top: -2px;
+}
+
+.actividad .list .item-input {
+  padding-left: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  margin-bottom: 1px;
+}
+
+.actividad .list .item .input-label {
+  color: #f15207;
+}
+
+.actividad .list .item input {
+  text-align: end;
+    padding-right: 12px;
+}
+
+.actividad .list .item img {
+  height: 36px;
+}
+
+.actividad .list .item select {
+  text-align: end;
+    tab-index: -1;
+    padding-right: 0;
+}
+
+.actividad .list .item-select:after {
+  color: transparent;
+}
+
+.actividad .list .item input[disabled] {
+  background-color: transparent;
+}
+
+.actividad .circleContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-left: calc(50% - 100px);
+}
+
+.actividad .circleContainer svg {
+  position: absolute;
+}
+
+.actividad .circleContainer .time {
+  position: absolute;
+  color: black;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  top: 87px;
+}
+
+.recreovias .slider-pager {
+  display: none;
+}
+
+.recreovias .bar-footer {
+  padding: 0;
+}
+
+.recreovias .bar-footer .button {
+  height: 100%;
+  vertical-align: top;
+  width: 50%;
+  border-radius: 0;
+  border: 1px solid transparent;
+  border-top: 1px solid #ddd;
+  background-color: white;
+}
+
+.recreovias .bar-footer .button div {
+  position: relative;
+  top: -14px;
+}
+
+.recreovias .bar-footer .button svg{
+  width: 24px;
+  height: 24px;
+  margin-bottom: -8px;
+  margin-right: 4px;
+  fill-rule:evenodd;1
+  clip-rule:evenodd;
+  stroke-linejoin:round;
+  stroke-miterlimit:1.41421;
+}
+
+.recreovias .bar-footer .button.activated {
+  background-color: rgba(68,68,68,0.2);
+}
+
+.recreovias .bar > .button + .button:last-child {
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-left: 1px solid #ddd;
+}
+
+
+.recreovias .tableContainer {
+  display: inline-block;
+  width: calc(100% - 40px);
+  vertical-align: top;
+  margin-left: 6px;
+  border: none !important;
+}
+
+.recreovias .card .item-text-wrap {
+  padding: 10px;
+  background-color: transparent;
+}
+
+.recreovias .card .item:first-child {
+  text-align: left;
+  font-size: 14px;
+  background-color: white;
+}
+
+.recreovias .card .item:first-child div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.recreovias .card .item:first-child svg {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.recreovias .item p {
+  font-size: 11px;
+  height: 17px;
+}
+
+.recreovias table {
+  width: 100%;
+  font-size: 12px;
+  table-layout: fixed;
+}
+
+.recreovias table td, .actividad table td {
+  width: 50%;
+  text-align: end;
+}
+
+.recreovias table tr td:first-of-type, .actividad table tr td:first-of-type  {
+  width: 50%;
+  text-align: start;
+}
+
+.historial .card .item-divider {
+  text-align: center;
+}
+
+.historial .card .item:first-child {
+  text-align: left;
+  font-size: 14px;
+}
+
+.historial .card .item:first-child div {
+  height: 17px;
+  position: relative;
+}
+
+.historial .card .item:first-child div p {
+  display: inline-block;
+}
+
+.historial .card .item:first-child div p.right {
+  position: absolute;
+  right: 0;
+}
+
+.historial .card .item:first-child .rightTop {
+  position: absolute;
+  right: 15px;
+  top: 7px;
+}
+
+.historial .card .item:first-child .rightTop svg {
+  height: 20px;
+  fill: #f15207;
+}
+
+.historial .card .item:first-child .rightTop svg.disliked {
+  fill: #444;
+}
+
+.historial .card .item-text-wrap {
+  padding: 0;
+  background-color: transparent;
+}
+
+.historial .card .item-text-wrap div:last-child {
+  border-left: 1px solid #eee;
+}
+
+.historial .card .item:last-child {
+  background-color: transparent;
+  padding-bottom: 4px;
+}
+
+.historial .card .infoDiv {
+  width: calc(50% - 3px);
+  display: inline-block;
+  text-align: center;
+  padding: 8px 0;
+  height: 32px;
+  font-size: 12px;
+}
+
+.historial .card .infoDiv .label {
+  font-size: 18px;
+  line-height: 22px;
+  color: #f15207;
+}
+
+.historial .card .icon {
+  font-size: 24px;
+  color: #f15207;
+}
+
+.historial .bar-header {
+  padding: 0;
+  margin-top: 22px;
+}
+
+.historial .bar-header .topSearchBar label {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.historial ion-content {
+  padding-top: 44px;
+  background: url(../img/bck_map.jpg) center center;
+  background-size: cover;
+}
+
+.historial .card {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.historial .item-divider {
+  background-color: white;
+}
+
+.historial .item p {
+  font-size: 11px;
+  height: 17px;
+}
+
+.recreovias .bar-header {
+  padding: 0;
+  margin-top: 22px;
+}
+
+.recreovias .bar-header .topSearchBar label {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.recreovias ion-content {
+  padding-top: 44px;
+  background: url(../img/bck_map.jpg) center center;
+  background-size: cover;
+}
+
+.recreovias ion-content #listContainter .card:first-child, .historial ion-content #listContainter .card:first-child {
+  margin-top: 59px;
+}
+
+.recomendaciones ion-content #listContainter .card:first-child {
+  margin-top: 20px;
+}
+
+.recreovias .card {
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+.recreovias .card .item-divider {
+  text-align: center;
+}
+
+.recreovias .card .item-text-wrap div:last-child {
+  border-left: 1px solid #eee;
+}
+
+.recreovias .card .item:last-child {
+  background-color: transparent;
+  padding: 8px;
+}
+
+.recreovias .card .item:last-child .button {
+  width: 100%;
+  min-height: 38px;
+  line-height: 30px;
+  color: #f96008;
+  border-radius: 0;
+  //background-color: transparent;
+}
+
+.recreovias .card .infoDiv {
+  width: calc(50% - 3px);
+  display: inline-block;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.recreovias .card .infoDiv .label {
+  font-size: 26px;
+  line-height: 22px;
+}
+
+.recreovias .card .icon {
+  font-size: 24px;
+  color: #f15207;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+input[type=date] {
+    display:block;
+    -webkit-appearance:button;
+    -moz-appearance:button;
+    appearance:button;
+}
+
+.actividad #circle circle, .actividad #circle path {
+    fill: none;
+    stroke-width: 5;
+    stroke-opacity: 1;
+}
+
+.actividad #circle circle {
+    stroke: #f15207;
+}
+
+.actividad #circle path {
+    stroke: #f15207;
+}
+
+.actividad #play {
+  fill: #f15207;
+  top: 38px;
+  left: 38px;
+}
+
+.actividad .button {
+  margin-bottom: 10px;
+}
+
+.actividad #pause {
+  color: #505050;
+  background-color: transparent;
+  border-color: #505050;
+  position: absolute;
+  bottom: 57px;
+  z-index: 1000;
+}
+
+.actividad #pause div {
+  position: relative;
+  right: 22px;
+}
+
+.actividad #start {
+  color: #27ae60;
+  background-color: transparent;
+  border-color: #27ae60;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.actividad #start div {
+  position: relative;
+  right: 22px;
+}
+
+.actividad #timeCount {
+  position: absolute;
+  z-index: 1000;
+  top: 118px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.actividad #caloriesCount {
+  position: absolute;
+  z-index: 1000;
+  top: 196px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.actividad #timeCount .number, .actividad #caloriesCount .number {
+  color: black;
+  font-size: 24px;
+  margin-top: 19px;
+  margin-bottom: -2px;
+}
+
+.actividad #timeCount .label, .actividad #caloriesCount .label {
+  color: #f15207;
+  font-size: 11px;
+}
+
+.actividad #stop {
+  color: #e74c3c;
+  background-color: transparent;
+  border-color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.actividad #stop div {
+  position: relative;
+  right: 22px;
+}
+
+.actividad #resume {
+  color: #27ae60;
+  background-color: transparent;
+  border-color: #27ae60;
+  position: absolute;
+  bottom: 57px;
+  z-index: 1000;
+}
+
+.actividad #resume div {
+  position: relative;
+  right: 22px;
+}
+
+.actividad #delete {
+  position: absolute;
+  bottom: 110px;
+  right: 16px;
+  text-align: center;
+  z-index: 1000;
+  border: 0px solid #444;
+  width: 52px;
+  padding: 0;
+}
+
+.actividad .slider, .actividad .slider .listWrapper {
+  height: 100%;
+}
+
+.actividad .space {
+  height: calc(50% - 256px);
+}
+
+.actividad .spaceDetectar {
+  height: calc(50% - 132px);
+}
+
+.recreovias .slider {
+  height: 100%;
+}
+
+.popup .popup-body {
+  color: black;
+  text-align: center;
+}
+
+.popup .popup-body svg {
+  height: 30px;
+  fill: #b9b9b9;
+}
+
+.popup .popup-body svg {
+  height: 30px;
+  fill: #b9b9b9;
+}
+
+.popup .popup-body svg:first-of-type {
+  margin-right: 70px;
+}
+
+.popup .popup-body svg.selected {
+  fill: #f15207;
+}
+
+.popup .button {
+  border-radius: 4px;
+}
+
+.popup .button-default {
+  background-color: transparent;
+  border: 1px solid #444;
+}
+
+.popup .button.button-positive {
+  background-color: transparent;
+  border: 1px solid #27ae60;
+  color: #27ae60;
+}
+
+.popup i {
+  font-size: 28px;
+}
+
+.popup .button.button-positive.activated {
+  background-color: transparent;
+}
+
+#map, #listContainter {
+  height: calc(100% - 43px);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+#map {
+  z-index: 1;
+}
+
+#listContainter {
+  z-index: -1;
+}
+
+@media (max-height: 550px) {
+    .backgroundInitial .indexWrapper .list .item-input {
+        height: 38px;
+    }
+
+    .actividad .circleContainer {
+      margin-bottom: -20px;
+      margin-top: -20px;
+    }
+
+    .actividad .list .item-input {
+        height: 38px;
+    }
+
+    .actividad .space {
+      height: calc(50% - 218px);
+    }
+
+    .menu .item-complex .item-content {
+      /*padding: 10px 49px 10px 16px;*/
+    }
+
+    .menu #alcaldia {
+      width: 124px;
+    }
+
+    .scroll-menu {
+      max-height: calc(100% - 233px);
+    }
+
+    .actividad #mapActividad {
+      height: calc(100% - 76px);
+    }
+}
+
+.menu .bar-header {
+  height: auto !important;
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+}
+
+@media (min-width: 680px) {
+    .modal {
+        min-height: 90% !important;
+        top: 5% !important;
+    }
+}
+
+ion-modal-view .bar-footer {
+    height: 76px;
+    padding: 5px 15px;
+}
+
+ion-modal-view .bar .button, .bar button {
+  
+  
+}
+
+ion-modal-view .bar #continuar {
+  background-color: transparent;
+  border-color: #27ae60;
+  color: #27ae60;
+  font-size: 16px;
+  min-height: auto;
+}
+
+ion-modal-view .bar #continuar.activated {
+  background-color: #27ae60;
+  color: white;
+}
+
+@media (min-width: 767px) {
+  .menu-content {
+    -webkit-transform: translate3d(270px, 0px, 0px) !important;
+    width: calc(100% - 270px) !important;
+  } 
+  
+  ion-header-bar .buttons-left .left-buttons {
+    display: none;
+  }
+
+  .backgroundInitial .ionSlideMaxWidth {
+    width: 600px;
+    display: inline-block;
+  }
+
+  .backgroundInitial ion-slide {
+    text-align: center;
+  }
+}
+
+.leaflet-container .leaflet-control-attribution {
+  font-size: 7px !important;
+}
+
+.slider-slide {
+  overflow-y: auto;
+}
+
+.item svg.active {
+  fill: #f96008;
+}
+
+.item svg.inactive {
+  fill: #aaaaaa;
+}
+
+.recreovias ion-slide div:last-of-type.card {
+  margin-bottom: 60px;
+}
+
+.popupRecreovia {
+  min-width: 200px;
+}
+
+.popupRecreovia p {
+  margin: 0px !important;
+  color: #666;
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.popupRecreovia .nombre {
+  font-size: 13px;
+  color: #f15207;
+  font-weight: bold;
+}
+
+.leaflet-popup-content-wrapper {
+  cursor: pointer;
+}
+
+.recreovias .popupRecreovia .tableContainer, .actividad .popupRecreovia .tableContainer {
+  width: 100%;
+  margin-left: 0;
+}
+
+.recreovias .popupRecreovia table td, .actividad .popupRecreovia table td {
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.recreovias hr, .actividad hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+ion-modal-view ion-content {
+  /*height: calc(100% - 200px) !important;*/
+}
+
+ion-modal-view ion-content .scroll {
+  height: 100%;
+}
+
+#mapModal {
+  width: 100%;
+  height: calc(100% - 174px);
+}
+
+#barrio {
+  text-align: right;
+  border: 0px;
+}
+
+.recomendaciones ion-content {
+  padding-top: 0px;
+}
+
+.recomendaciones .listDivider {
+  background-color: rgba(241,82,7,0.7);
+  padding: 6px 14px;
+  font-size: 14px;
+}
+
+.recomendaciones .card .item:last-child {
+   padding-bottom: 8px;
+}
+
+.input-label {
+  font-size: 14px;
+}
+
+.recomendaciones svg {
+  cursor: pointer;
+}
+
+.recomendaciones svg.notSelected {
+  fill: rgba(0,0,0,0.4) !important;
+}
+
+.recomendaciones svg.selectedLike {
+  fill: #27ae60 !important;
+}
+
+.recomendaciones svg.selectedDisike {
+  fill: #e74c3c !important;
+}
+
+.recomendaciones .card .item:last-child {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.recomendaciones #enviar {
+  color: white;
+  background-color: rgba(68,68,68,0.8);
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.recomendaciones button {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  border: 1px solid rgba(68,68,68,0.8)
+}
+
+.recomendaciones .card .item:first-child div {
+  height: auto;
+}
+
+.recreovias .leaflet-top .leaflet-control {
+    margin-top: 55px;
+}
+
+.centerme {
+    margin: 0 auto;
+    width: 100%;
+    height:100%;
+}
+ 
+.fullscreen-player {
+    width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    overflow: none;
+    position: fixed;
+    right: 0;
+    top: 0 !important;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.videoClose {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}

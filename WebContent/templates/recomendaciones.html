@@ -1,0 +1,72 @@
+<ion-view view-title="Recomendaciones" class="historial recomendaciones">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear" ng-click="refrescarRecomendaciones()">
+            <svg style="width:24px;height:24px;margin-bottom: -6px;" viewBox="10 10 20 20">
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path fill="#f96008" d="M26.6,21.7c-0.1,0-0.2,0-0.3-0.1l-2.7-2.4c-0.2-0.2-0.2-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0l2.3,2.1
+                        l2.1-2.3c0.2-0.2,0.5-0.2,0.7,0c0.2,0.2,0.2,0.5,0,0.7l-2.4,2.7C26.8,21.6,26.7,21.7,26.6,21.7C26.6,21.7,26.6,21.7,26.6,21.7z
+                        " />
+                                </g>
+                                <g>
+                                    <path fill="#f96008" d="M11,22c-0.1,0-0.2,0-0.3-0.1c-0.2-0.2-0.2-0.5,0-0.7l2.4-2.7c0.1-0.1,0.2-0.2,0.3-0.2
+                        c0.1,0,0.3,0,0.4,0.1l2.7,2.4c0.2,0.2,0.2,0.5,0,0.7c-0.2,0.2-0.5,0.2-0.7,0l-2.3-2.1l-2.1,2.3C11.3,22,11.1,22,11,22z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path fill="#f96008" d="M26.6,21.5C26.6,21.5,26.5,21.5,26.6,21.5c-0.3,0-0.5-0.3-0.5-0.6c0.2-1.6-0.2-3.3-1.1-4.6
+                        c-1-1.3-2.4-2.2-4.1-2.4c-1.6-0.2-3.3,0.2-4.6,1.1c-0.2,0.2-0.5,0.1-0.7-0.1c-0.2-0.2-0.1-0.5,0.1-0.7c1.5-1.1,3.4-1.6,5.3-1.3
+                        c1.9,0.3,3.6,1.3,4.7,2.8c1.1,1.5,1.6,3.4,1.3,5.3C27.1,21.3,26.8,21.5,26.6,21.5z" />
+                                </g>
+                                <g>
+                                    <path fill="#f96008" d="M20,27.2c-0.4,0-0.7,0-1.1-0.1c-1.9-0.3-3.6-1.3-4.7-2.8c-1.1-1.5-1.6-3.4-1.3-5.3
+                        c0-0.3,0.3-0.5,0.6-0.4c0.3,0,0.5,0.3,0.4,0.6c-0.2,1.6,0.2,3.3,1.1,4.6c1,1.3,2.4,2.2,4.1,2.4c1.6,0.2,3.3-0.2,4.6-1.1
+                        c0.2-0.2,0.5-0.1,0.7,0.1c0.2,0.2,0.1,0.5-0.1,0.7C23,26.7,21.5,27.2,20,27.2z" />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+            </svg>
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <div ng-repeat="dia in recomendaciones">
+            <div class="listDivider" ng-if="dia.actividades.length > 0">{{dia.titulo}}</div>
+            <div class="card" ng-repeat="actividad in dia.actividades">
+                <div class="item item-divider">
+                    {{actividad.actividad|actividadShort}}
+                    <div style="margin-top: 10px;">
+                        <p>{{actividad.parque}}</p>
+                        <p class="right">{{actividad.horario}}</p>
+                    </div>
+                    <div class="rightTop">
+                        <svg viewBox="0 0 21 21" ng-show="actividad.like" ng-click="clickLike($index,$parent.$index)" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;height: 30px;">
+                            <path d="M10.2,20.4c-5.625,0 -10.2,-4.575 -10.2,-10.2c0,-5.625 4.575,-10.2 10.2,-10.2c5.625,0 10.2,4.575 10.2,10.2c0,5.625 -4.5,10.2 -10.2,10.2Zm-0.9,-7.2c-0.45,0 -0.825,-0.15 -1.05,-0.45l-1.35,-1.35c-0.225,-0.225 -0.225,-0.6 0,-0.825c0.225,-0.225 0.6,-0.225 0.825,0l1.35,1.35c0.15,0.15 0.15,0.15 0.225,0.15c0.15,0 0.225,0 0.225,-0.15l3.225,-3.225c0.225,-0.225 0.6,-0.225 0.825,0c0.225,0.225 0.225,0.6 0,0.825l-3.225,3.225c-0.225,0.225 -0.6,0.45 -1.05,0.45Z" style="fill:#27ae60;" />
+                        </svg>
+                        <svg viewBox="0 0 21 21" ng-show="!actividad.like" ng-click="clickLike($index,$parent.$index)" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;height: 30px;">
+                            <path d="M10.2,20.4c-5.625,0 -10.2,-4.575 -10.2,-10.2c0,-5.625 4.575,-10.2 10.2,-10.2c5.625,0 10.2,4.575 10.2,10.2c0,5.625 -4.5,10.2 -10.2,10.2Zm0,-19.2c-4.95,0 -9,4.05 -9,9c0,4.95 4.05,9 9,9c4.95,0 9,-4.05 9,-9c0,-4.95 -4.05,-9 -9,-9Z" style="fill:#a5a5a5;fill-rule:nonzero;" />
+                            <path d="M9.3,13.2c-0.45,0 -0.825,-0.15 -1.05,-0.45l-1.35,-1.35c-0.225,-0.225 -0.225,-0.6 0,-0.825c0.225,-0.225 0.6,-0.225 0.825,0l1.35,1.35c0.15,0.15 0.15,0.15 0.225,0.15c0.15,0 0.225,0 0.225,-0.15l3.225,-3.225c0.225,-0.225 0.6,-0.225 0.825,0c0.225,0.225 0.225,0.6 0,0.825l-3.225,3.225c-0.225,0.225 -0.6,0.45 -1.05,0.45Z" style="fill:#a5a5a5;fill-rule:nonzero;" />
+                        </svg>
+                        <svg viewBox="0 0 21 21" ng-show="actividad.dislike" ng-click="clickDislike($index,$parent.$index)" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;height: 30px;">
+                            <path d="M10.2,20.4c-5.625,0 -10.2,-4.575 -10.2,-10.2c0,-5.625 4.575,-10.2 10.2,-10.2c5.625,0 10.2,4.575 10.2,10.2c0,5.625 -4.5,10.2 -10.2,10.2Zm0,-11.025l2.1,-2.1c0.225,-0.225 0.6,-0.225 0.825,0c0.225,0.225 0.225,0.6 0,0.825l-2.1,2.1l2.1,2.1c0.225,0.225 0.225,0.6 0,0.825c-0.15,0.075 -0.225,0.15 -0.375,0.15c-0.15,0 -0.375,0 -0.45,-0.15l-2.1,-2.1l-2.1,2.1c0,0.075 -0.3,0.15 -0.375,0.15c-0.15,0 -0.375,0 -0.45,-0.15c-0.225,-0.225 -0.225,-0.6 0,-0.825l2.1,-2.1l-2.1,-2.1c-0.225,-0.225 -0.225,-0.6 0,-0.825c0.225,-0.225 0.6,-0.225 0.825,0l2.1,2.1Z" style="fill:#e74c3c;" />
+                        </svg>
+                        <svg viewBox="0 0 21 21" ng-show="!actividad.dislike" ng-click="clickDislike($index,$parent.$index)" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;height: 30px;">
+                            <path d="M10.2,20.4c-5.625,0 -10.2,-4.575 -10.2,-10.2c0,-5.625 4.575,-10.2 10.2,-10.2c5.625,0 10.2,4.575 10.2,10.2c0,5.625 -4.5,10.2 -10.2,10.2Zm0,-19.2c-4.95,0 -9,4.05 -9,9c0,4.95 4.05,9 9,9c4.95,0 9,-4.05 9,-9c0,-4.95 -4.05,-9 -9,-9Z" style="fill:#a5a5a5;fill-rule:nonzero;" />
+                            <path d="M12.75,13.275c-0.15,0 -0.375,0 -0.45,-0.15l-5.025,-5.025c-0.225,-0.225 -0.225,-0.6 0,-0.825c0.225,-0.225 0.6,-0.225 0.825,0l5.025,5.025c0.225,0.225 0.225,0.6 0,0.825c-0.15,0.075 -0.225,0.15 -0.375,0.15Z" style="fill:#a5a5a5;fill-rule:nonzero;" />
+                            <path d="M7.725,13.275c-0.15,0 -0.375,0 -0.45,-0.15c-0.225,-0.225 -0.225,-0.6 0,-0.825l5.025,-5.025c0.225,-0.225 0.6,-0.225 0.825,0c0.225,0.225 0.225,0.6 0,0.825l-5.025,5.025c0,0.075 -0.3,0.15 -0.375,0.15Z" style="fill:#a5a5a5;fill-rule:nonzero;" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<button class="button" ng-click="start()" id="enviar" ng-show="!startActivity">
+        <div style="width: calc(100% - 45px); display: inline-block;">ENVIAR</div>
+    </button>-->
+    </ion-content>
+</ion-view>

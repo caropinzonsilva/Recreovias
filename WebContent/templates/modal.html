@@ -1,0 +1,50 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Información adicional</h1>
+    <div class="buttons">
+      <button class="button button-clear" id="close" ng-click="closeModal()">
+        <svg style="width: 24px; height: 24px; margin-right: 10px; margin-bottom: -6px;" viewBox="10 10 20 20">
+            <g>
+              <g>
+                <g>
+                  <path fill="#231815" d="M25,25.5c-0.1,0-0.3,0-0.4-0.1l-10-10c-0.2-0.2-0.2-0.5,0-0.7s0.5-0.2,0.7,0l10,10c0.2,0.2,0.2,0.5,0,0.7
+                    C25.3,25.5,25.1,25.5,25,25.5z"/>
+                </g>
+                <g>
+                  <path fill="#231815" d="M15,25.5c-0.1,0-0.3,0-0.4-0.1c-0.2-0.2-0.2-0.5,0-0.7l10-10c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7l-10,10
+                    C15.3,25.5,15.1,25.5,15,25.5z"/>
+                </g>
+              </g>
+            </g>
+        </svg>
+      </button>
+    </div>
+  </ion-header-bar>
+  <ion-content scroll="false" data-tap-disabled="true">
+    <form name="forms.additionalInformationform">
+      <div class="list">
+        <label class="item item-input item-select">
+          <span class="input-label">Fecha de nacimiento</span>
+          <input type="date" ng-model="formData.birthdate" name="birthdate" style="text-align: right;" required>
+        </label>
+        <label class="item item-input item-select">
+          <span class="input-label">Sexo</span>
+          <select ng-model="formData.sex" name="sex" style="text-align: right;" required>
+              <option value='M'>Masculino</option>
+              <option value='F'>Femenino</option>
+          </select>
+        </label>
+        <label class="item item-input item-select">
+          <span class="input-label">Barrio de residencia</span>
+          <input list="barrioList" name="barrio" id="barrio" ng-model="formData.barrio" name="barrio" required list-validator="nombreBarrios" ng-change="changeBarrio()" ng-model-options='{ debounce: 500 }'>
+          <datalist id="barrioList"> 
+          </datalist>
+        </label>
+      </div>
+    </form>
+    <div id="mapModal"></div>
+  </ion-content>
+  <ion-footer-bar>
+    <button class="button button-block" type="submit" ng-click="sendAdditionalInfo()" id="continuar">CONTINUAR</button>
+  </ion-footer-bar>
+</ion-modal-view>

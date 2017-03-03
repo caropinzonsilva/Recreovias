@@ -1,0 +1,64 @@
+<ion-view view-title="Nueva Actividad">
+    <ion-content class="actividad" scroll="false" data-tap-disabled="true">
+        <div class="listWrapper">
+            <div class="list">
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Recreovía
+                    </div>
+                    <select ng-disabled="startActivity" ng-model="formData.parque">
+                        <option ng-repeat="recreovia in nombresRecreovias" value="{{$index}}">{{recreovia.nombre}}</option>
+                    </select>
+                </label>
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Actividad
+                    </div>
+                    <select ng-disabled="startActivity" ng-model="formData.actividad">
+                        <option ng-repeat="actividad in nombreActividades" value="{{$index}}">{{actividad.nombre}}</option>
+                    </select>
+                </label>
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Fecha
+                    </div>
+                    <input type="date" ng-model="formData.fecha">
+                </label>
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Horario
+                    </div>
+                    <select ng-disabled="startActivity" ng-model="formData.horario">
+                        <option value="sm">Entre semana mañana</option>
+                        <option value="sn">Entre semana noche</option>
+                        <option value="fs">Fines de semana</option>
+                    </select>
+                </label>
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Duración
+                    </div>
+                    <input type="number" min="1" max="60" ng-model="formData.duracion">
+                    <span style="font-size: 12px;">minutos</span>
+                </label>
+            </div>
+        </div>
+        <div id="mapHistorialNueva" data-ng-init="loadMap()"></div>
+        <button class="button" ng-click="save()" id="start">
+            <svg style="width: 24px; height: 24px; margin-right: 10px; margin-bottom: -6px;" viewBox="10 10 20 20">
+                <g>
+                    <g>
+                        <g>
+                            <path fill="#27ae60" d="M26,20.5H14c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h12c0.3,0,0.5,0.2,0.5,0.5S26.3,20.5,26,20.5z" />
+                        </g>
+                        <g>
+                            <path fill="#27ae60" d="M20,26.5c-0.3,0-0.5-0.2-0.5-0.5V14c0-0.3,0.2-0.5,0.5-0.5s0.5,0.2,0.5,0.5v12
+                                C20.5,26.3,20.3,26.5,20,26.5z" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div style="width: calc(100% - 45px); display: inline-block;">GUARDAR</div>
+        </button>
+    </ion-content>
+</ion-view>
